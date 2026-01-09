@@ -1,25 +1,26 @@
 const loginForm = document.getElementById("login-form");
 const usernameInput = document.getElementById("username");
 const passwordInput = document.getElementById("password");
-let messages = ["Te quiero mucho y te echo de menos, mama! Miaaaaaaaauuuuuu! Llama a tu papa mucho para que pueda verte, miau miau.", 
-    "Puede que estés muy estresada, miau. Y a veces parece que es imposible seguir adelante, miau miau. ¡Pero yo creo en tí! Si vas poco a poco, lo conseguirás. ¡Estoy segura! MIAAAAAAAAAAUUUUUUUUUUU!!!!!!!",
-    "¡Oye, miau! Llevame a España contigo, miau. ¡Yo también quiero comer jamón, miau miau miau miau!",
-    "Ven a visitarme pronto, mama ¡quiero dormir contigo y darte alergia! Puedes traer tambien a ese chico de la última vez. ¡Me gustaba morderle! Miau.",
-    "Gracias por cuidarme, mama. Gracias por salvarme. Gracias por ser mi mama, miau",
-    "Yo tambien estoy aprendiendo català. Cuando me lleves contigo comeré muchas butifarras. ¡I calçots també!",
-    "A veces te equivocas, pero no pasa nada, miau! Porque aprendes, miau. La próxima vez lo haras mejor! No existe el fracaso porque todo te lleva más cerca de tu objetivo, miau. Siempre puedes volver a intentarlo. Como cuando intentava morder a ese chico que me visitó. Fracasé muchas veces, miau! Pero un dia conseguiré comerme su dedo!",
-    "¿Te sientes sola, mama? Yo no, porque se que estas pensando en mí, miau. Por eso, no te sientas sola, porque yo siempre estoy pensando en ti, miauuuu!!!!",
-    "Ese chico, Alex o cómo se llame, miau, es bastante estupido. Te hizo llorar así que tendré que comermelo. Traelo otra vez aqui y le castigaré como merece, miau!",
-    "A veces cuando me siento triste pienso en todas las cosas buenas que me han pasado y me doy cuenta de que soy muy afortunada. Sobretodo porque te tengo a ti, miau. ¡¡Te quiero!!",
-    "No tienes que llevar la carga tu sola, miau! Si te sientes triste, agobiada o enfadada puedes decirmelo, miau. No voy a decir nada, solo voy a hacerte compañia. Normalmente es suficiente, miau",
-    "Aunque llueva mucho, el sol termina por volver. Nos echa de menos, igual que yo a ti. ¡Miau!",
-    "Tengo un poco de envidia. Tienes muchas personas que te quieren mucho y te cuidan muy bien, miau. Pero supongo que no puedo quejarme, porque yo te tengo a tí, que eres la mejor! Miau!",
-    "Al final todo sale bien. Incluso cuando sale mal, tambien sale bien. ¿Cómo?¿Que no tiene sentido? ¡Da igual! MIIIIIIIIIIAAAAAAAAAAUUUUUUUUUUU",
-    "Cuando hagas pasta, recuerda echar un buen puñado de sal mientras el agua hierve, miau. ¡Si no quedará muy sosa!",
-    "Los indices bursátiles están en un mal momento. Creo que no es un buen momento para invertir, miau. ¡Mejor comprame mas chuches!",
-    "Si no me das 5 kilos de comida ahora mismo me como a Money. ¡Una princesa necesita estar bien alimentada, miau!",
-    "媽媽，告訴爸爸給我多買點糖果。我吃膩了飼料和蟲。公主需要優質食物。",
-    "Miau, miau, miau. Significa que te quiero. ¡Pero eso ya lo sabias!",
+let messages = ["Hola, mamaaaa, miau. Hoy me he despertado, he comido, he dormido y he vuelto a comer pensando en ti. Ha sido un día muy duro. Te quiero, miau.", 
+    "Si hoy no te digo ‘te quiero’, no es porque no te quiera… es porque estaba durmiendo. Pero ahora sí: TE QUIERO, MIAU.",
+    "Mama, recuerda beber agua, miau. Yo no lo hago, pero tú sí deberías. Alguien tiene que ser responsable en esta familia.",
+    "Dicen que soy independiente, miau. Mentira. Soy dependiente de ti, de la comida y de llenar la ropa de pelo.",
+    "Cuando sonríes, miau, yo ronroneo a distancia. No sé cómo funciona la física, pero confía en mí.",
+    "He decidido perdonarte por irte… pero solo porque sé que volverás con regalos, miau.",
+    "Si hoy el mundo pesa demasiado, miau, déjalo un rato en el suelo y ven a acariciarme. Yo lo vigilo.",
+    "Mama, no olvides que eres muy valiente. Yo lo sé porque yo solo soy valiente cuando hay comida cerca, miau.",
+    "A veces no respondo cuando me llamas, miau. No es desprecio. Es personalidad.",
+    "Si alguien te dice qué tienes que hacer con tu vida, miau, ignóralo. Haz como yo: duerme primero y decide luego. Muerdele también",
+    "Te mando un abrazo invisible, miau. Si no lo notas es porque soy muy sigilosa.",
+    "Recuerda: si algo sale mal hoy, siempre puedes volver a intentarlo mañana… o echarte una siesta. Lo segundo suele ser más efectivo, miau.",
+    "Mama, eres mi cosa favorita de este mundo. No se lo digas a la comida, miau.",
+    "Aunque no esté contigo ahora, miau, sigo ocupando el 90% de tu corazón. El otro 10% lo dejo para otras personas, porque soy muy generosa.",
+    "Si hoy te sientes cansada, miau, es porque has querido mucho. Eso gasta energía. Eres una super deportista, eh?",
+    "Buenas noches, mama. Sueña bonito. Yo vigilo la casa… a 11.000 km de distancia… durmiendo. Miau.",
+    "Mama, si algún día dudas de ti, miau, mírame a mí: soy perfecta y he salido de ti. ¿Coincidencia? No lo creo.",
+    "Pase lo que pase ahí fuera, miau, aquí siempre tendrás un ronroneo esperándote. Siempre.",
+    "Me gusta esa conción que dice: Por eso esperaba con la carita empapada que llegaras con Rosis, con mil Rosis para mi. Porque ya sabes que me encantan esas locas no me importa si es muy tonta, soy asiiiiii.",
+    "¿Dia de autoestima baja? Recuerda, soy una princesa. Es significa que tu eres la reina. Ya sabes... :P",
 ]
 
 loginForm.addEventListener("submit", function (event) {
@@ -60,4 +61,5 @@ loginForm.addEventListener("submit", function (event) {
     document.getElementById("wrong-message").textContent =
       "Miau! Usuario o contraseña incorrectos! Miau!";
   }
+
 });
